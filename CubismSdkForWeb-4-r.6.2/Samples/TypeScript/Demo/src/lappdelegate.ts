@@ -77,7 +77,8 @@ export class LAppDelegate {
     }
 
     // キャンバスを DOM に追加
-    document.body.appendChild(canvas);
+    // document.body.appendChild(canvas);
+    document.getElementById("live2d_canvas").appendChild(canvas);
 
     if (!frameBuffer) {
       frameBuffer = gl.getParameter(gl.FRAMEBUFFER_BINDING);
